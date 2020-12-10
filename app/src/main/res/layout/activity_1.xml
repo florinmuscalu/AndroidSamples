@@ -14,10 +14,8 @@
         android:layout_height="60dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="131dp"
         android:onClick="addLine"
         android:text="Add a new line to Textview"
-        app:layout_constraintEnd_toStartOf="@+id/home1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,4 +57,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addLine"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="?attr/TextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Keep adding new lines until the TextView gets filled up. Adding a new line after this causes verything to scoll up, in order to have the latest line visible. The default behavior is keep showing the top lines, requireing you to scroll down, if needed."
+        android:textColor="?attr/text_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test_text" />
 </androidx.constraintlayout.widget.ConstraintLayout>
