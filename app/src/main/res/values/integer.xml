@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="anim_length">500</integer>
+    <integer name="anim_length_half">250</integer>
+
+    <integer name="anim_length_fast">200</integer>
+    <integer name="anim_length_half_fast">100</integer>
+
+    <integer name="anim_length_slow">800</integer>
+    <integer name="anim_length_half_slow">400</integer>
+</resources>

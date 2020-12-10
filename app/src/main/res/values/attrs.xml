@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="activity_background_color" format="color" />
+    <attr name="fragment_background_color" format="reference" />
+    <attr name="text_color" format="color" />
+    <attr name="link_color" format="color" />
+    <attr name="text_hint_color" format="color" />
+    <attr name="card_front_color" format="color" />
+    <attr name="card_back_color" format="color" />
+    <attr name="card_front_text_color" format="color" />
+    <attr name="card_back_text_color" format="color" />
+    <attr name="webview_color" format="color" />
+    <attr name="webview_color_foreground" format="color" />
+    <attr name="flashcard_button_correct" format="reference" />
+    <attr name="flashcard_button_wrong" format="reference" />
+    <attr name="text_color_inverted" format="color" />
+    <attr name="button_dropdown" format="reference" />
+    <attr name="listItemStyle" format="reference" />
+    <attr name="theory_card_color" format="color" />
+    <attr name="theory_sub_card_color" format="color" />
+    <attr name="buttonTextStyle" format="reference"/>
+    <attr name="TextViewStyle" format="reference"/>
+    <attr name="TextViewSmallStyle" format="reference"/>
+</resources>
