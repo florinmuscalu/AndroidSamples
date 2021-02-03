@@ -1,2 +1,2 @@
 # AndroidSamples
-Sample tricks in Java for Android
+##Code samples to use in Java
