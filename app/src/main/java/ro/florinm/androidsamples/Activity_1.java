@@ -25,6 +25,7 @@ public class Activity_1 extends AppCompatActivity {
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         finish();
     }
+
     String s = "";
     int counter = 1;
 
