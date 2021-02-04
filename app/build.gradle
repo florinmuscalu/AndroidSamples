@@ -6,11 +6,26 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
+    def versionFile = file('version.properties')
+    Properties prop = new Properties()
+
+    if (versionFile.canRead()) {
+        prop.load(new FileInputStream(versionFile))
+    }
+    else {
+        prop['VERSION_CODE']='0'
+    }
+
+    def code = prop['VERSION_CODE'].toInteger() + 1
+
+    prop['VERSION_CODE']=code.toString()
+    prop.store(versionFile.newWriter(), null)
+
     defaultConfig {
         applicationId "ro.florinm.androidsamples"
         minSdkVersion 26
         targetSdkVersion 30
-        versionCode 1
+        versionCode code
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -34,7 +49,6 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
-    testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
